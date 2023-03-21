@@ -5,33 +5,21 @@ export function ProfileSection() {
   return (
     <Container>
       <PresentationContent>
-        <MainTitle>Encontre o café perfeito para qualquer hora do dia</MainTitle>
+        <MainTitle>Olá, me chamo Santiago, desenvolvedor de software no Brasil</MainTitle>
         <Subtitle>Com o Coffee Delivery você recebe seu café onde estiver, a qualquer hora</Subtitle>
 
         <TopicsSection>
           <Topic>
-            <CartIcon>
-              <ShoppingCart size={24} weight="fill" />
-            </CartIcon>
-            <p>Compra simples e segura</p>
+            <img src="https://abrudz.github.io/logos/JS.svg" alt="" />
           </Topic>
           <Topic>
-            <BoxIcon>
-              <Package size={24} weight="fill" />
-            </BoxIcon>
-            <p>Embalagem mantém o café intacto</p>
+            <img src="https://abrudz.github.io/logos/JS.svg" alt="" />
           </Topic>
           <Topic>
-            <ClockIcon>
-              <Timer size={24} weight="fill" />
-            </ClockIcon>
-            <p>Entrega rápida e rastreada</p>
+            <img src="https://abrudz.github.io/logos/JS.svg" alt="" />
           </Topic>
           <Topic>
-            <CoffeeIcon>
-              <Coffee size={24} weight="fill" />
-            </CoffeeIcon>
-            <p>O café chega fresquinho até você</p>
+            <img src="https://abrudz.github.io/logos/JS.svg" alt="" />
           </Topic>
         </TopicsSection>
       </PresentationContent>

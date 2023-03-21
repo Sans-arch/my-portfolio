@@ -18,6 +18,7 @@ export const Menu = styled.nav`
 
 export const MenuItem = styled.a`
   /* border: 2px solid red; */
-  font-size: 1.5rem;
+  font-family: 'Bai Jamjuree', sans-serif;
+  font-size: 1.2rem;
   text-decoration: none;
 `

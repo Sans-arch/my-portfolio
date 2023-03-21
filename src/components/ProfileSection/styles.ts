@@ -3,9 +3,12 @@ import styled from "styled-components";
 export const Container = styled.div`
   display: flex;
   margin-top: 94px;
+  border: 2px solid red;
+  width: 100%;
 `
 
-export const PresentationContent = styled.div``
+export const PresentationContent = styled.div`
+`
 
 export const MainImageArea = styled.div`
   width: 90%;
@@ -16,10 +19,13 @@ export const MainImageArea = styled.div`
 
 /* color: ${props => props.theme.base["base-title"]}; */
 export const MainTitle = styled.h1`
-  font-family: 'Baloo 2', sans-serif;
+  font-family: 'Bai Jamjuree', sans-serif;
   font-weight: 800;
   font-size: 48px;
   margin-bottom: 16px;
+  background: linear-gradient(90deg, #40CBF6, 30.83%, #82C041 80%);
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
 `
 
 export const Subtitle = styled.h2`
@@ -47,16 +53,10 @@ export const Topic = styled.div`
     margin-top: 20px;
   }
 
-  svg {
-    color: ${props => props.theme.white};
+  img {
+    width: 120px;
   }
 
-  p {
-    font-weight: 400;
-    font-size: 1rem;
-    line-height: 130%;
-    margin-left: 12px;
-  }
   `
   /* color: ${props => props.theme.base["base-text"]}; */
 

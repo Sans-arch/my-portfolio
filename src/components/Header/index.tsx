@@ -4,9 +4,9 @@ export function Header() {
   return (
     <Container>
       <Menu>
-        <MenuItem>Item 1</MenuItem>
-        <MenuItem>Item 2</MenuItem>
-        <MenuItem>Item 3</MenuItem>
+        <MenuItem>Quem sou</MenuItem>
+        <MenuItem>Meus projetos</MenuItem>
+        <MenuItem>Contato</MenuItem>
       </Menu>
     </Container>
   );
