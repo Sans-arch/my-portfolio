@@ -20,5 +20,5 @@ a {
 
 @font-face {
     font-family: "burtons";
-    src: url('/Burtons.otf');
+    src: url('../assets/Burtons.otf');
 }

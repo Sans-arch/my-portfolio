@@ -2,7 +2,11 @@ import { useState } from 'react'
 import { BsFillMoonStarsFill } from 'react-icons/bs'
 import { AiFillTwitterCircle, AiFillLinkedin, AiFillYoutube } from 'react-icons/ai'
 
+import { PortfolioProject } from './components/PortfolioProject';
+import { Service } from './components/Service';
+
 import '../styles/globals.css'
+
 import deved from '../assets/dev-ed-wave.png';
 import design from '../assets/design.png';
 import code from '../assets/code.png';
@@ -13,8 +17,6 @@ import web3 from '../assets/web3.png';
 import web4 from '../assets/web4.png';
 import web5 from '../assets/web5.png';
 import web6 from '../assets/web6.png';
-import { PortfolioProject } from './components/PortfolioProject';
-import { Service } from './components/Service';
 
 function App() {
   const [darkMode, setDarkMode] = useState(true)
@@ -24,21 +26,24 @@ function App() {
       <main className='bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900'>
         <section className="min-h-screen">
           <nav className='py-10 mb-12 flex justify-between'>
-            <h1 className='text-xl font-burtons'>Meu Portfólio</h1>
+            <h1 className='text-xl font-burtons dark:text-gray-200'>Meu Portfólio</h1>
             <ul className='flex items-center'>
               <li>
                 <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className='cursor-pointer text-2xl' />
               </li>
               <li>
-                <a className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8' href="#">Resume</a>
+                <a className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8' href="#">
+                  Resume
+                </a>
               </li>
             </ul>
           </nav>
           <div className='text-center p-10'>
             <h2 className='text-5xl py-2 text-teal-600 font-medium md:text-6xl'>Santiago Negreira</h2>
             <h3 className='text-2xl py-2 md:text-3xl'>Desenvolvedor de software.</h3>
-            <p className='text-md py-5 leading-8 text-gray-800 md:text-lg max-w-xl mx-auto'>
-              Freelancer providing services for programming and design content needs. Join me down below and let's get cracking!
+            <p className='text-md py-5 leading-8 text-gray-800 md:text-lg max-w-xl mx-auto dark:text-gray-300'>
+              Freelancer providing services for programming and design content needs.
+              Join me down below and let's get cracking!
             </p>
           </div>
           <div className='text-5xl flex justify-center gap-16 py-3 text-gray-600'>
@@ -53,12 +58,12 @@ function App() {
 
         <section>
           <div>
-            <h3 className='text-3xl py-1'>Services I offer</h3>
-            <p className='text-md py-2 leading-8 text-gray-800'>
+            <h3 className='text-3xl py-1 dark:text-teal-500'>Services I offer</h3>
+            <p className='text-md py-2 leading-8 text-gray-800 dark:text-white'>
               Since the beginning of my journey as a freelance designer and developer, I've done remote work for
               <span className='text-teal-500'> agencies </span> consulted for <span className='text-teal-500'>startups </span> started and collaborated with talented people to create digital products for both business and consumer use.
             </p>
-            <p className='text-md py-2 leading-8 text-gray'>
+            <p className='text-md py-2 leading-8 text-gray dark:text-white'>
               I offer from a wide range of services, including brand design, programming and teaching.
             </p>
           </div>
@@ -82,12 +87,12 @@ function App() {
         </section>
         <section>
           <div>
-            <h3 className='text-3xl py-1'>Portofolio</h3>
-            <p className='text-md py-2 leading-8 text-gray-800'>
+            <h3 className='text-3xl py-1 dark:text-teal-500'>Portofolio</h3>
+            <p className='text-md py-2 leading-8 text-gray-800 dark:text-white'>
               Since the beginning of my journey as a freelance designer and developer, I've done remote work for
               <span className='text-teal-500'> agencies </span> consulted for <span className='text-teal-500'>startups </span> started and collaborated with talented people to create digital products for both business and consumer use.
             </p>
-            <p className='text-md py-2 leading-8 text-gray'>
+            <p className='text-md py-2 leading-8 text-gray dark:text-gray-200'>
               I offer from a wide range of services, including brand design, programming and teaching.
             </p>
           </div>
