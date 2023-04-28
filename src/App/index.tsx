@@ -13,9 +13,11 @@ import web3 from '../assets/web3.png';
 import web4 from '../assets/web4.png';
 import web5 from '../assets/web5.png';
 import web6 from '../assets/web6.png';
+import { PortfolioProject } from './components/PortfolioProject';
+import { Service } from './components/Service';
 
 function App() {
-  const [darkMode, setDarkMode] = useState(false)
+  const [darkMode, setDarkMode] = useState(true)
 
   return (
     <div className={darkMode ? "dark" : ""}>
@@ -61,39 +63,21 @@ function App() {
             </p>
           </div>
           <div className='lg:flex gap-10'>
-            <div className='text-center shadow-lg p-10 rounded-xl my-10'>
-              <img src={design} alt="Foto de card" width={100} height={100} style={{ margin: "auto" }} />
-              <h3 className='text-lg font-medium pt-8 pb-2'>Beatiful Designs</h3>
-              <p className='py-2'>
-                Creating elegant designs suited for your needs following core design theory.
-              </p>
-              <h4 className='py-4 text-teal-600'>Design tools I use</h4>
-              <p className='text-gray-800 py-1'>Photoshop</p>
-              <p className='text-gray-800 py-1'>Illustrator</p>
-              <p className='text-gray-800 py-1'>Figma</p>
-            </div>
-            <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white'>
-              <img src={consulting} alt="Foto de card" width={100} height={100} style={{ margin: "auto" }} />
-              <h3 className='text-lg font-medium pt-8 pb-2'>Beatiful Designs</h3>
-              <p className='py-2'>
-                Creating elegant designs suited for your needs following core design theory.
-              </p>
-              <h4 className='py-4 text-teal-600'>Design tools I use</h4>
-              <p className='text-gray-800 py-1'>Photoshop</p>
-              <p className='text-gray-800 py-1'>Illustrator</p>
-              <p className='text-gray-800 py-1'>Figma</p>
-            </div>
-            <div className='text-center shadow-lg p-10 rounded-xl my-10'>
-              <img src={code} alt="Foto de card" width={100} height={100} style={{ margin: "auto" }} />
-              <h3 className='text-lg font-medium pt-8 pb-2'>Beatiful Designs</h3>
-              <p className='py-2'>
-                Creating elegant designs suited for your needs following core design theory.
-              </p>
-              <h4 className='py-4 text-teal-600'>Design tools I use</h4>
-              <p className='text-gray-800 py-1'>Photoshop</p>
-              <p className='text-gray-800 py-1'>Illustrator</p>
-              <p className='text-gray-800 py-1'>Figma</p>
-            </div>
+            <Service
+              imgLink={design}
+              title="Beatiful Designs"
+              description='Creating elegant designs suited for your needs following core design theory.'
+            />
+            <Service
+              imgLink={consulting}
+              title="Beatiful Designs"
+              description='Creating elegant designs suited for your needs following core design theory.'
+            />
+            <Service
+              imgLink={code}
+              title="Beatiful Designs"
+              description='Creating elegant designs suited for your needs following core design theory.'
+            />
           </div>
         </section>
         <section>
@@ -108,24 +92,12 @@ function App() {
             </p>
           </div>
           <div className='flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap'>
-            <div className='basis-1/3 flex-1'>
-              <img src={web1} alt="" className='rounded-lg object-cover' width={'100%'} height={'100%'} />
-            </div>
-            <div className='basis-1/3 flex-1'>
-              <img src={web2} alt="" className='rounded-lg object-cover' width={'100%'} height={'100%'} />
-            </div>
-            <div className='basis-1/3 flex-1'>
-              <img src={web3} alt="" className='rounded-lg object-cover' width={'100%'} height={'100%'} />
-            </div>
-            <div className='basis-1/3 flex-1'>
-              <img src={web4} alt="" className='rounded-lg object-cover' width={'100%'} height={'100%'} />
-            </div>
-            <div className='basis-1/3 flex-1'>
-              <img src={web5} alt="" className='rounded-lg object-cover' width={'100%'} height={'100%'} />
-            </div>
-            <div className='basis-1/3 flex-1'>
-              <img src={web6} alt="" className='rounded-lg object-cover' width={'100%'} height={'100%'} />
-            </div>
+            <PortfolioProject imgLink={web1} />
+            <PortfolioProject imgLink={web2} />
+            <PortfolioProject imgLink={web3} />
+            <PortfolioProject imgLink={web4} />
+            <PortfolioProject imgLink={web5} />
+            <PortfolioProject imgLink={web6} />
           </div>
         </section>
       </main>
