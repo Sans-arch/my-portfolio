@@ -3,16 +3,16 @@ import { BsFillMoonStarsFill } from 'react-icons/bs'
 import { AiFillTwitterCircle, AiFillLinkedin, AiFillYoutube } from 'react-icons/ai'
 
 import '../styles/globals.css'
-import deved from '../../public/dev-ed-wave.png';
-import design from '../../public/design.png';
-import code from '../../public/code.png';
-import consulting from '../../public/consulting.png';
-import web1 from '../../public/web1.png';
-import web2 from '../../public/web2.png';
-import web3 from '../../public/web3.png';
-import web4 from '../../public/web4.png';
-import web5 from '../../public/web5.png';
-import web6 from '../../public/web6.png';
+import deved from '../assets/dev-ed-wave.png';
+import design from '../assets/design.png';
+import code from '../assets/code.png';
+import consulting from '../assets/consulting.png';
+import web1 from '../assets/web1.png';
+import web2 from '../assets/web2.png';
+import web3 from '../assets/web3.png';
+import web4 from '../assets/web4.png';
+import web5 from '../assets/web5.png';
+import web6 from '../assets/web6.png';
 
 function App() {
   const [darkMode, setDarkMode] = useState(false)
