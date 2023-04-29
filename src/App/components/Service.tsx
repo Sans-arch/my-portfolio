@@ -2,12 +2,14 @@ interface IService {
     imgLink: string
     title: string
     description: string
+    children?: React.ReactNode
 }
 
-export function Service({ imgLink, title, description }: IService) {
+export function Service({ imgLink, title, description, children }: IService) {
     return (
         <div
-            className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-gray-100 hover:shadow-2xl hover:scale-105 transition-all duration-500'
+            className='flex-1 text-center shadow-lg p-10 rounded-xl 
+            my-10 dark:bg-slate-800 dark:text-teal-50 hover:shadow-2xl hover:scale-105 transition-all duration-500'
         >
             <img
                 src={imgLink}
@@ -24,10 +26,9 @@ export function Service({ imgLink, title, description }: IService) {
             <p className='py-2'>
                 {description}
             </p>
-            <h4 className='py-4 text-teal-600'>Design tools I use</h4>
-            <p className='text-gray-800 py-1'>Photoshop</p>
-            <p className='text-gray-800 py-1'>Illustrator</p>
-            <p className='text-gray-800 py-1'>Figma</p>
+            <div className="mt-8 flex justify-center gap-6">
+                {children}
+            </div>
         </div>
     )
 }
