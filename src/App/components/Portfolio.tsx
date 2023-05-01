@@ -13,12 +13,12 @@ export function Portfolio() {
     <section>
       <PortfolioText />
       <div className='flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap'>
-        <PortfolioProject imgLink={web1} />
+        {/* <PortfolioProject imgLink={web1} />
         <PortfolioProject imgLink={web2} />
         <PortfolioProject imgLink={web3} />
         <PortfolioProject imgLink={web4} />
         <PortfolioProject imgLink={web5} />
-        <PortfolioProject imgLink={web6} />
+        <PortfolioProject imgLink={web6} /> */}
       </div>
     </section>
   )
