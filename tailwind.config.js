@@ -9,6 +9,9 @@ export default {
     extend: {
       fontFamily: {
         burtons: 'burtons'
+      },
+      animation: {
+        'spin-low-image': 'spin 10s linear infinite'
       }
     }
   },

@@ -1,12 +1,11 @@
-import { DiJava, DiNodejs } from 'react-icons/di'
-import { SiApachetomcat } from 'react-icons/si'
+import { DiJava, DiNodejs, DiReact } from 'react-icons/di'
+import { SiApachetomcat, SiJavascript, SiTypescript, SiStyledcomponents } from 'react-icons/si'
 
 import { Service } from "./Service";
 import { ServicesText } from "./ServicesText";
 
 import design from '../../assets/design.png';
 import code from '../../assets/code.png';
-import consulting from '../../assets/consulting.png';
 
 export function Services() {
   return (
@@ -23,10 +22,15 @@ export function Services() {
           <SiApachetomcat className='text-6xl' />
         </Service>
         <Service
-          imgLink={consulting}
+          imgLink={code}
           title="Front-end"
-          description='Experiência com desenvolvimento front-end'
-        />
+          description='Experiência no desenvolvimento de aplicações front-end, desenvolvendo SPA com React.js e utilizando bibliotecas como React Router, Axios, Styled Components, Context API, entre outras.'
+        >
+          <SiJavascript className='text-5xl' />
+          <SiTypescript className='text-5xl' />
+          <DiReact className='text-5xl' />
+          <SiStyledcomponents className='text-5xl' />
+        </Service>
       </div>
     </section>
   )
