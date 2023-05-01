@@ -8,7 +8,7 @@ interface IService {
 export function Service({ imgLink, title, description, children }: IService) {
     return (
         <div
-            className='flex-1 text-center shadow-lg p-10 rounded-xl 
+            className='flex-1 text-center shadow-lg p-10 rounded-xl bg-white
             my-10 dark:bg-slate-800 dark:text-teal-50 hover:shadow-2xl hover:scale-105 transition-all duration-500'
         >
             <img

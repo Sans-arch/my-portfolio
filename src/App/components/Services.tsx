@@ -1,5 +1,5 @@
 import { DiJava, DiNodejs, DiReact } from 'react-icons/di'
-import { SiApachetomcat, SiJavascript, SiTypescript, SiStyledcomponents } from 'react-icons/si'
+import { SiApachetomcat, SiJavascript, SiTypescript, SiStyledcomponents, SiMysql, SiMicrosoftsqlserver } from 'react-icons/si'
 
 import { Service } from "./Service";
 import { ServicesText } from "./ServicesText";
@@ -20,6 +20,8 @@ export function Services() {
           <DiJava className='text-6xl' />
           <DiNodejs className='text-6xl' />
           <SiApachetomcat className='text-6xl' />
+          <SiMysql className='text-6xl' />
+          <SiMicrosoftsqlserver className='text-6xl' />
         </Service>
         <Service
           imgLink={code}

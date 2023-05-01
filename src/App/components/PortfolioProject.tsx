@@ -1,18 +1,20 @@
 interface IPortfolioProject {
     imgLink: string
+    repoUrl: string
     alt?: string
 }
 
-export function PortfolioProject({ imgLink, alt }: IPortfolioProject) {
+export function PortfolioProject({ imgLink, repoUrl, alt }: IPortfolioProject) {
     return (
-        <div className='basis-1/3 flex-1'>
-            <img
-                src={imgLink}
-                alt={alt ? alt : ""}
-                width={'100%'}
-                height={'100%'}
-                className='rounded-lg object-cover hover:scale-105 hover:shadow-lg transition-all duration-500'
-            />
+        <div className='relative overflow-hidden rounded-lg'>
+            <a href={repoUrl} target="_blank">
+                <img
+                    src={imgLink}
+                    alt={alt ? alt : ""}
+                    className=' w-full h-full object-cover
+                    hover:scale-110 hover:shadow-lg transition-all duration-500'
+                />
+            </a>
         </div>
     )
 }

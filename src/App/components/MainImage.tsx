@@ -1,4 +1,4 @@
-import deved from '../../assets/dev-ed-wave.png';
+import profile from '../../assets/profile.png';
 
 export function MainImage() {
   return (
@@ -7,7 +7,7 @@ export function MainImage() {
       overflow-hidden md:h-96 md:w-96 mb-10 hover:animate-spin-low-image'
     >
       <img
-        src={deved}
+        src={profile}
         alt="Foto"
         style={{ objectFit: "cover", height: "100%" }}
       />
