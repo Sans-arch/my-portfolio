@@ -30,6 +30,10 @@ export function Portfolio() {
           imgLink="https://user-images.githubusercontent.com/69471715/235525854-84806f98-28fd-4ccd-955d-dfb24ddb0d5d.png"
           repoUrl="https://github.com/Sans-arch/mycontacts-api"
         />
+        <PortfolioProject
+          imgLink="https://user-images.githubusercontent.com/69471715/235713266-c95604ee-b878-4b33-b9b2-a09739b3b6b1.png"
+          repoUrl="https://github.com/Sans-arch/03-dt-money"
+        />
       </div>
     </section>
   )
