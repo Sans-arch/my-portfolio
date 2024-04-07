@@ -1,0 +1,8 @@
+{
+  "backend": {
+    "mainDescription": "Experiência no desenvolvimento de aplicações back-end, desenvolvendo API REST com Java e Node.js e utilizando banco de dados relacional, sempre seguindo as boas práticas de desenvolvimento."
+  },
+  "frontend": {
+    "mainDescription": "Experiência no desenvolvimento de aplicações front-end, desenvolvendo SPA com React.js e utilizando bibliotecas como React Router, Axios, Styled Components, Context API, entre outras."
+  }
+}
